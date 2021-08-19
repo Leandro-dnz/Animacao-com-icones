@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bloco1 {
+  background: url(../img/facebook.png) no-repeat;
+}
+.bloco2 {
+  background: url(../img/instagram.png) no-repeat;
+}
+.bloco3 {
+  background: url(../img/twitter.png) no-repeat;
+}
+.bloco4 {
+  background: url(../img/whatsapp.png) no-repeat;
+}
+.bloco5 {
+  background: url(../img/linkedin.png) no-repeat;
+}
+
+/*Animation Fade
+*/
+.item {
+  width: 100px;
+  height: 100px;
+}
+.item:hover {
+  animation-play-state: paused;
+}
+.animationFadeIn {
+  animation: fadeIn 2s linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animationFadeOut {
+  animation: fadeIn 2s linear;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+.animationFadeInFadeOut {
+  animation: fadeInFadeOut 2s linear infinite;
+}
+@keyframes fadeInFadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.spinner {
+  border-radius: 50%;
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.animationSpinner {
+  animation: rotate 2s linear infinite;
+}
+.animationSpinnerEase {
+  animation: rotate 2s ease infinite;
+}
+.animationSpinnerEaseOut {
+  animation: rotate 2s ease-out infinite;
+}
+
+/**AnimationPosition**/
+.positionBox1 {
+  width: 200px;
+  height: 200px;
+  background-color: #3f51b5;
+  position: absolute;
+  border-radius: 40px;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+.positionBox2 {
+  width: 200px;
+  height: 200px;
+  background-color: #f44e53;
+  position: absolute;
+  border-radius: 40px;
+  margin-left: 10px;
+  margin-top: 160px;
+}
+.positionBox3 {
+  width: 200px;
+  height: 200px;
+  background-color: #55acee;
+  position: absolute;
+  border-radius: 40px;
+  margin-left: 80px;
+  margin-top: 390px;
+}
+.positionBox4 {
+  width: 200px;
+  height: 200px;
+  background-color: #4caf50;
+  position: absolute;
+  border-radius: 40px;
+  margin-left: 490px;
+  margin-top: 160px;
+}
+.positionBox5 {
+  width: 200px;
+  height: 200px;
+  background-color: #0288d1;
+  position: absolute;
+  border-radius: 40px;
+  margin-left: 400px;
+  margin-top: 390px;
+}
+.positionBox6 {
+  width: 560px;
+  height: 300px;
+  background: url(../img/redessociais.png) no-repeat;
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 90px;
+}
+.animationPosition {
+  position: absolute;
+  animation: position 4s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes position {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  35% {
+    top: 0;
+    right: calc(100% - 100px);
+  }
+  50% {
+    top: calc(100% - 100px);
+
+    right: calc(100% - 200px);
+  }
+  50% {
+    top: calc(100% - 100px);
+    right: calc(100% - 100px);
+  }
+  85% {
+    top: calc(100% - 100px);
+    right: 0;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
